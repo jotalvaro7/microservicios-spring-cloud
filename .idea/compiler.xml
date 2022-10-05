@@ -10,6 +10,7 @@
         <module name="client-standalone" />
         <module name="simple-rest-example" />
         <module name="spring-gateway" />
+        <module name="gateway-server" />
         <module name="dragon-ball" />
         <module name="game-of-thrones" />
         <module name="eureka-server" />
@@ -23,6 +24,7 @@
       <module name="dragonball-failover" target="11" />
       <module name="eureka-server" target="11" />
       <module name="game-of-thrones" target="11" />
+      <module name="gateway-server" target="11" />
       <module name="simple-rest-example" target="11" />
       <module name="spring-gateway" target="11" />
     </bytecodeTargetLevel>
@@ -35,6 +37,7 @@
       <module name="dragonball-failover" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="game-of-thrones" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
       <module name="simple-rest-example" options="-parameters" />
       <module name="spring-gateway" options="-parameters" />
     </option>

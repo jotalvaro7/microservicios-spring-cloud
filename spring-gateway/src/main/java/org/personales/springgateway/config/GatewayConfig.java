@@ -37,9 +37,9 @@ public class GatewayConfig {
     public RouteLocator configLocalEurekaCircuitBreaker(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/api/v1/dragonball/*")
-//                            .filters(f -> f.circuitBreaker(config -> config.setName("failoverCB")
-//                                .setFallbackUri("forward:/api/v1/db-failover/dragonball/characters")
-//                                .setRouteId("dbFailover")))
+                            .filters(f -> f.circuitBreaker(config -> config.setName("failoverCB")
+                                .setFallbackUri("forward:/api/v1/db-failover/dragonball/characters")
+                                .setRouteId("dbFailover")))
                         .uri("lb://dragon-ball"))
                 .route(r -> r.path("/api/v1/gameofthrones/*")
                         .uri("lb://game-of-thrones"))
