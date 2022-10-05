@@ -1,19 +1,9 @@
 
 E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
-ç
-]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a
 Ñ
 Teureka-server/src/main/java/org/personales/eurekaserver/EurekaServerApplication.java,7\2\729d5965193acb8eb2c46423362b6229bf7514b6
-C
-dragon-ball/pom.xml,9\a\9a54338272d2d19096035a574f724372d1ce93c4
 E
 config-server/pom.xml,a\2\a2f9618c8ad821b143a07a29a9805fcb0b2df470
 Ñ
 Tconfig-server/src/main/java/org/personales/configserver/ConfigServerApplication.java,5\5\558179243708402967a0469ae9f0c71ca12c5485
-Ä
-Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.java,8\6\868748a3e7576efffb08137446ef9971c2bad116
-Ü
-Vdragon-ball/src/main/java/org/personales/dragonball/config/DiscoveryConfiguration.java,0\a\0ae38bcd24a08c16145d27fb358b3bfae3b2ae26
-~
-Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
