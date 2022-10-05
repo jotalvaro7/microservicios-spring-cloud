@@ -12,7 +12,12 @@ public class GatewayConfig {
     @Bean
 //    @Profile("localhostRouter-noEureka")
     public RouteLocator configLocalNoEureka(RouteLocatorBuilder builder) {
-        return builder.routes().build();
+        return builder.routes()
+                .route(r -> r.path("/api/v1/dragonball/*")
+                        .uri("http://localhost:8082"))
+                .route(r -> r.path("/api/v1/gameofthrones/*")
+                        .uri("http://localhost:8083"))
+                .build();
     }
 
 }
