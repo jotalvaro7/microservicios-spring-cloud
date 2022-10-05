@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/dragonball/characters")
+@RequestMapping("/api/v1/db-failover/dragonball/characters")
 public class DragonBallController {
 
     private Faker faker = new Faker();
