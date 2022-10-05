@@ -17,3 +17,5 @@ Tconfig-server/src/main/java/org/personales/configserver/ConfigServerApplication
 Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.java,8\6\868748a3e7576efffb08137446ef9971c2bad116
 †
 Vdragon-ball/src/main/java/org/personales/dragonball/config/DiscoveryConfiguration.java,0\a\0ae38bcd24a08c16145d27fb358b3bfae3b2ae26
+~
+Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138

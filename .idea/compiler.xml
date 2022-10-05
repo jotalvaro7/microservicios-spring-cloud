@@ -11,6 +11,7 @@
         <module name="simple-rest-example" />
         <module name="dragon-ball" />
         <module name="eureka-server" />
+        <module name="spring-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="dragon-ball" target="11" />
       <module name="eureka-server" target="11" />
       <module name="simple-rest-example" target="11" />
+      <module name="spring-gateway" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="dragon-ball" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="simple-rest-example" options="-parameters" />
+      <module name="spring-gateway" options="-parameters" />
     </option>
   </component>
 </project>
