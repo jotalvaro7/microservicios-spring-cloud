@@ -13,12 +13,14 @@
         <module name="dragon-ball" />
         <module name="game-of-thrones" />
         <module name="eureka-server" />
+        <module name="dragonball-failover" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client-standalone" target="11" />
       <module name="config-server" target="11" />
       <module name="dragon-ball" target="11" />
+      <module name="dragonball-failover" target="11" />
       <module name="eureka-server" target="11" />
       <module name="game-of-thrones" target="11" />
       <module name="simple-rest-example" target="11" />
@@ -30,6 +32,7 @@
       <module name="client-standalone" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="dragon-ball" options="-parameters" />
+      <module name="dragonball-failover" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="game-of-thrones" options="-parameters" />
       <module name="simple-rest-example" options="-parameters" />

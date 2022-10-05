@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/client-standalone/pom.xml" />
         <option value="$PROJECT_DIR$/spring-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/game-of-thrones/pom.xml" />
+        <option value="$PROJECT_DIR$/dragonball-failover/pom.xml" />
       </list>
     </option>
   </component>
