@@ -1,6 +1,8 @@
 package org.personales.dragonball.controller;
 
 import com.github.javafaker.Faker;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +18,8 @@ public class DragonBallController {
 
     private Faker faker = new Faker();
 
+    private static final Logger log = LoggerFactory.getLogger(DragonBallController.class);
+
     private List<String> characters = new ArrayList<>();
 
     @PostConstruct
@@ -27,6 +31,7 @@ public class DragonBallController {
 
     @GetMapping
     public ResponseEntity<List<String>> getCharacters(){
+        log.info("Getting Characters db");
         return ResponseEntity.ok(characters);
     }
 }
