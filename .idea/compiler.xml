@@ -9,9 +9,10 @@
         <module name="config-server" />
         <module name="client-standalone" />
         <module name="simple-rest-example" />
-        <module name="dragon-ball" />
-        <module name="eureka-server" />
         <module name="spring-gateway" />
+        <module name="dragon-ball" />
+        <module name="game-of-thrones" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="config-server" target="11" />
       <module name="dragon-ball" target="11" />
       <module name="eureka-server" target="11" />
+      <module name="game-of-thrones" target="11" />
       <module name="simple-rest-example" target="11" />
       <module name="spring-gateway" target="11" />
     </bytecodeTargetLevel>
@@ -29,6 +31,7 @@
       <module name="config-server" options="-parameters" />
       <module name="dragon-ball" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="game-of-thrones" options="-parameters" />
       <module name="simple-rest-example" options="-parameters" />
       <module name="spring-gateway" options="-parameters" />
     </option>
