@@ -1,8 +1,6 @@
 
 E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
-I
-client-standalone/pom.xml,3\c\3cf2028e30d4a621bae591d9082339cd81dfee15
 ç
 ]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a
 Ñ
