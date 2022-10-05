@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Profile;
 public class GatewayConfig {
 
     @Bean
-    @Profile("localhostRouter-noEureka")
+//    @Profile("localhostRouter-noEureka")
     public RouteLocator configLocalNoEureka(RouteLocatorBuilder builder) {
         return builder.routes().build();
     }
