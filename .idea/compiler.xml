@@ -10,11 +10,10 @@
         <module name="client-standalone" />
         <module name="simple-rest-example" />
         <module name="spring-gateway" />
-        <module name="gateway-server" />
         <module name="dragon-ball" />
         <module name="game-of-thrones" />
-        <module name="eureka-server" />
         <module name="dragonball-failover" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

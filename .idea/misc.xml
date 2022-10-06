@@ -6,12 +6,11 @@
         <option value="$PROJECT_DIR$/dragon-ball/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/simple-rest-example/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/client-standalone/pom.xml" />
         <option value="$PROJECT_DIR$/spring-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/game-of-thrones/pom.xml" />
         <option value="$PROJECT_DIR$/dragonball-failover/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
       </list>
     </option>
   </component>
