@@ -1,4 +1,4 @@
-package org.personales.dragonball.config;
+package org.personales.gameofthrones.config;
 
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.beans.factory.annotation.Value;
