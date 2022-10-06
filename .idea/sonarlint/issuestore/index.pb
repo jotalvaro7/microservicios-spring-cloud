@@ -29,8 +29,6 @@ E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
 ~
 Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
-F
-spring-gateway/pom.xml,1\a\1ae8afa193c046bd1a78f539e3254a5533e53aff
 ˆ
 Xgame-of-thrones/src/main/java/org/personales/gameofthrones/GameOfThronesApplication.java,d\3\d363eead9caa644dd80de5ca4172bbf932e603ea
 ‡
