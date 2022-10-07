@@ -1,0 +1,70 @@
+#Docker-compose with msvc-eureka, zipkin, msvc-gateway, msvc-dragon-ball
+version: '3.9'
+services:
+  msvc-eureka-container:
+    container_name: msvc-eureka-container
+    build:
+      context: ./eureka-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    environment:
+      PORT: 8761
+    networks:
+      - spring
+  zipkin-container:
+    container_name: zipkin-container
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - spring
+  msvc-gateway-container:
+    container_name: msvc-gateway-container
+    build:
+      context: ./spring-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "9095:9095"
+    environment:
+      PORT: 9095
+      EUREKA_CLIENT: msvc-eureka-container:8761
+      ZIPKIN_CLIENT: zipkin-container:9411
+    networks:
+      - spring
+    depends_on:
+      - msvc-eureka-container
+      - zipkin-container
+  msvc-config-container:
+    container_name: msvc-config-container
+    build:
+      context: ./config-server
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    environment:
+      PORT: 8888
+    networks:
+      - spring
+  dragon-ball-container:
+    container_name: dragon-ball-container
+    build:
+      context: ./dragon-ball
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    environment:
+      PORT: 8082
+      EUREKA_CLIENT: msvc-eureka-container:8761
+      ZIPKIN_CLIENT: zipkin-container:9411
+      CONFIG_CLIENT: msvc-config-container:8888
+    networks:
+      - spring
+    depends_on:
+      - msvc-eureka-container
+      - msvc-config-container
+      - zipkin-container
+
+networks:
+    spring:
+        name: spring
