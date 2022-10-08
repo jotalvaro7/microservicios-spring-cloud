@@ -1,6 +1,4 @@
 
-I
-client-standalone/pom.xml,3\c\3cf2028e30d4a621bae591d9082339cd81dfee15
 K
 dragonball-failover/pom.xml,4\3\43d171465af707fb64e2ae5abeb8872e21bd5662
 ò
@@ -23,14 +21,10 @@ F
 spring-gateway/pom.xml,1\a\1ae8afa193c046bd1a78f539e3254a5533e53aff
 H
 eureka-server/Dockerfile,c\2\c23e45bb07363b2bfed88dc0975147c2a8cedd09
-F
-dragon-ball/Dockerfile,a\e\ae6a2299c9e1366bbaea415ef9a0491418af01e1
 H
 config-server/Dockerfile,b\6\b61e3bf1cf202a99b9cf49c6d7e26c98df17134b
 Ñ
 Teureka-server/src/main/java/org/personales/eurekaserver/EurekaServerApplication.java,7\2\729d5965193acb8eb2c46423362b6229bf7514b6
-~
-Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
 É
 Sdragon-ball/src/main/java/org/personales/dragonball/config/RegistryMetricsName.java,f\a\fab8169c7cfd291eb0dc5b83c65daccc006c35bb
 Ä
@@ -43,7 +37,3 @@ C
 dragon-ball/pom.xml,9\a\9a54338272d2d19096035a574f724372d1ce93c4
 {
 Kdragon-ball/src/main/java/org/personales/dragonball/service/FooService.java,5\8\58e6d2ee552f21261d6238b72209ce94e97431ba
-à
-Xdragon-ball/src/main/java/org/personales/dragonball/controller/DragonBallController.java,b\5\b54f4d5821463b6cfefe4525f394cf8b747580e9
-ç
-]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a

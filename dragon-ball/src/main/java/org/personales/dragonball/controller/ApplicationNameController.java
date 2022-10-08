@@ -38,9 +38,9 @@ public class ApplicationNameController {
         Log.info("Getting application name");
         int value = new Random().nextInt(5);
         registry.counter("dragonball.name", "level", (value<3)?"jr":"sr").increment(value);
-        if(value < 3 ){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
-        }
+//        if(value < 3 ){
+//            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+//        }
         return ResponseEntity.ok(dragonBallConfig.getApplicationName());
     }
 }
