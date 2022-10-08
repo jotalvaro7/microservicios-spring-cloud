@@ -1,8 +1,8 @@
 #Docker-compose with msvc-eureka, zipkin, msvc-gateway, msvc-dragon-ball
 version: '3.9'
 services:
-  msvc-eureka-container:
-    container_name: msvc-eureka-container
+  service-registry:
+    container_name: service-registry
     build:
       context: ./eureka-server
       dockerfile: Dockerfile
@@ -12,6 +12,7 @@ services:
       PORT: 8761
     networks:
       - spring
+    restart: always
   zipkin-container:
     container_name: zipkin-container
     image: openzipkin/zipkin
@@ -19,8 +20,9 @@ services:
       - "9411:9411"
     networks:
       - spring
-  msvc-gateway-container:
-    container_name: msvc-gateway-container
+    restart: always
+  api-gateway:
+    container_name: api-gateway
     build:
       context: ./spring-gateway
       dockerfile: Dockerfile
@@ -28,15 +30,16 @@ services:
       - "9095:9095"
     environment:
       PORT: 9095
-      EUREKA_CLIENT: msvc-eureka-container:8761
+      EUREKA_CLIENT: service-registry:8761
       ZIPKIN_CLIENT: zipkin-container:9411
     networks:
       - spring
     depends_on:
-      - msvc-eureka-container
+      - service-registry
       - zipkin-container
-  msvc-config-container:
-    container_name: msvc-config-container
+    restart: always
+  config-server:
+    container_name: config-server
     build:
       context: ./config-server
       dockerfile: Dockerfile
@@ -46,8 +49,9 @@ services:
       PORT: 8888
     networks:
       - spring
-  dragon-ball-container:
-    container_name: dragon-ball-container
+    restart: always
+  msvc-dragon-ball:
+    container_name: msvc-dragon-ball
     build:
       context: ./dragon-ball
       dockerfile: Dockerfile
@@ -55,16 +59,16 @@ services:
       - "8082:8082"
     environment:
       PORT: 8082
-      EUREKA_CLIENT: msvc-eureka-container:8761
+      EUREKA_CLIENT: service-registry:8761
       ZIPKIN_CLIENT: zipkin-container:9411
-      CONFIG_CLIENT: msvc-config-container:8888
+      CONFIG_CLIENT: config-server:8888
     networks:
       - spring
     depends_on:
-      - msvc-eureka-container
-      - msvc-config-container
+      - service-registry
+      - config-server
       - zipkin-container
-
+    restart: always
 networks:
     spring:
         name: spring

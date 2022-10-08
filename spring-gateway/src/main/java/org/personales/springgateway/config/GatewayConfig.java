@@ -26,9 +26,9 @@ public class GatewayConfig {
     public RouteLocator configLocalEureka(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/api/v1/dragonball/*")
-                        .uri("lb://dragon-ball"))
+                        .uri("lb://msvc-dragon-ball"))
                 .route(r -> r.path("/api/v1/gameofthrones/*")
-                        .uri("lb://game-of-thrones"))
+                        .uri("lb://msvc-game-of-thrones"))
                 .build();
     }
 
@@ -40,11 +40,11 @@ public class GatewayConfig {
                             .filters(f -> f.circuitBreaker(config -> config.setName("failoverCB")
                                 .setFallbackUri("forward:/api/v1/db-failover/dragonball/characters")
                                 .setRouteId("dbFailover")))
-                        .uri("lb://dragon-ball"))
+                        .uri("lb://msvc-dragon-ball"))
                 .route(r -> r.path("/api/v1/gameofthrones/*")
-                        .uri("lb://game-of-thrones"))
+                        .uri("lb://msvc-game-of-thrones"))
                 .route(r -> r.path("/api/v1/db-failover/dragonball/*")
-                        .uri("lb://dragon-ball-failover"))
+                        .uri("lb://msvc-dragon-ball-failover"))
                 .build();
     }
 

@@ -1,6 +1,4 @@
 
-Ñ
-Tconfig-server/src/main/java/org/personales/configserver/ConfigServerApplication.java,5\5\558179243708402967a0469ae9f0c71ca12c5485
 I
 client-standalone/pom.xml,3\c\3cf2028e30d4a621bae591d9082339cd81dfee15
 K
@@ -11,8 +9,6 @@ hdragonball-failover/src/main/java/org/personales/dragonballfailover/controller/
 bgame-of-thrones/src/main/java/org/personales/gameofthrones/controller/GameOfThronesController.java,6\b\6baf49b723eace04b239eab882a935fcc5849893
 J
 game-of-thrones/.classpath,2\9\2923ef07d0de16177b55bfc25280efa8d2590e6b
-É
-Sspring-gateway/src/main/java/org/personales/springgateway/config/GatewayConfig.java,0\9\09a717ff96391cf66da20f28ce9cc591a3bbdfce
 G
 game-of-thrones/pom.xml,3\c\3ceb16047cec6862eecce8dfad41b42e98660d58
 ä
@@ -23,8 +19,6 @@ E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
 I
 spring-gateway/Dockerfile,1\4\14af17576d829f116ecc0b9e6cd21b09ffcd5abc
-á
-Wspring-gateway/src/main/java/org/personales/springgateway/SpringGatewayApplication.java,7\a\7aaf3b2ac8ce3ebcc97622ffc4f7c55163c9b1e8
 F
 spring-gateway/pom.xml,1\a\1ae8afa193c046bd1a78f539e3254a5533e53aff
 H
@@ -35,3 +29,21 @@ H
 config-server/Dockerfile,b\6\b61e3bf1cf202a99b9cf49c6d7e26c98df17134b
 Ñ
 Teureka-server/src/main/java/org/personales/eurekaserver/EurekaServerApplication.java,7\2\729d5965193acb8eb2c46423362b6229bf7514b6
+~
+Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
+É
+Sdragon-ball/src/main/java/org/personales/dragonball/config/RegistryMetricsName.java,f\a\fab8169c7cfd291eb0dc5b83c65daccc006c35bb
+Ä
+Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.java,8\6\868748a3e7576efffb08137446ef9971c2bad116
+E
+config-server/pom.xml,a\2\a2f9618c8ad821b143a07a29a9805fcb0b2df470
+Ü
+Vdragon-ball/src/main/java/org/personales/dragonball/config/DiscoveryConfiguration.java,0\a\0ae38bcd24a08c16145d27fb358b3bfae3b2ae26
+C
+dragon-ball/pom.xml,9\a\9a54338272d2d19096035a574f724372d1ce93c4
+{
+Kdragon-ball/src/main/java/org/personales/dragonball/service/FooService.java,5\8\58e6d2ee552f21261d6238b72209ce94e97431ba
+à
+Xdragon-ball/src/main/java/org/personales/dragonball/controller/DragonBallController.java,b\5\b54f4d5821463b6cfefe4525f394cf8b747580e9
+ç
+]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a
