@@ -5,10 +5,6 @@ K
 hdragonball-failover/src/main/java/org/personales/dragonballfailover/controller/DragonBallController.java,e\7\e77465651710d80754469e02fb104f340c1f3b98
 J
 game-of-thrones/.classpath,2\9\2923ef07d0de16177b55bfc25280efa8d2590e6b
-Š
-Zgame-of-thrones/src/main/java/org/personales/gameofthrones/config/RegistryMetricsName.java,6\9\693aec495d9905cce8d0b0e91511e1b284ffdfe7
-ˆ
-Xgame-of-thrones/src/main/java/org/personales/gameofthrones/GameOfThronesApplication.java,d\3\d363eead9caa644dd80de5ca4172bbf932e603ea
 E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
 I
