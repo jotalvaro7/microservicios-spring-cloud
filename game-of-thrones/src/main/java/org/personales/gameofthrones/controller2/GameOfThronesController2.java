@@ -1,4 +1,4 @@
-package org.personales.gameofthrones.controller;
+package org.personales.gameofthrones.controller2;
 
 import com.github.javafaker.Faker;
 import io.swagger.v3.oas.annotations.Operation;
@@ -19,13 +19,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/gameofthrones/characters")
-public class GameOfThronesController {
+@RequestMapping("/rest/gameofthrones/personajes")
+public class GameOfThronesController2 {
 
     private Faker faker = new Faker();
     private List<String> characters = new ArrayList<>();
 
-    private static final Logger log = LoggerFactory.getLogger(GameOfThronesController.class);
+    private static final Logger log = LoggerFactory.getLogger(GameOfThronesController2.class);
 
     @PostConstruct
     public void init(){
