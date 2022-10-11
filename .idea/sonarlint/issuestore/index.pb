@@ -45,14 +45,6 @@ Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.jav
 Vdragon-ball/src/main/java/org/personales/dragonball/config/DiscoveryConfiguration.java,0\a\0ae38bcd24a08c16145d27fb358b3bfae3b2ae26
 É
 Sdragon-ball/src/main/java/org/personales/dragonball/config/RegistryMetricsName.java,f\a\fab8169c7cfd291eb0dc5b83c65daccc006c35bb
-ç
-]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a
-à
-Xdragon-ball/src/main/java/org/personales/dragonball/controller/DragonBallController.java,b\5\b54f4d5821463b6cfefe4525f394cf8b747580e9
-{
-Kdragon-ball/src/main/java/org/personales/dragonball/service/FooService.java,5\8\58e6d2ee552f21261d6238b72209ce94e97431ba
-C
-dragon-ball/pom.xml,9\a\9a54338272d2d19096035a574f724372d1ce93c4
 Ñ
 Teureka-server/src/main/java/org/personales/eurekaserver/EurekaServerApplication.java,7\2\729d5965193acb8eb2c46423362b6229bf7514b6
 î
