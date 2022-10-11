@@ -1,11 +1,12 @@
 package org.personales.authservice.config;
 
-import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.personales.authservice.model.entities.UserEntity;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Date;
 import java.util.Map;
@@ -16,6 +17,7 @@ public class JwtProvider {
     @Value("${jwt.secret}")
     private String secretkey;
 
+    //Metodo para crear el token
     public String createToken(UserEntity user){
         Map<String, Object>  claims = Jwts.claims().setSubject(user.getUsername());
         claims.put("id", user.getId());
@@ -31,6 +33,26 @@ public class JwtProvider {
                 .setExpiration(exp)
                 .signWith(SignatureAlgorithm.HS256, secretkey)
                 .compact();
+    }
+
+    //Metodo para validar el token
+    public boolean validatetoken(String token){
+        try {
+            Jwts.parser().setSigningKey(secretkey).parseClaimsJws(token);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
+
+    //Metodo para obtener el username del token
+    public String getUsernameFromToken(String token){
+        try{
+            return Jwts.parser().setSigningKey(secretkey).parseClaimsJws(token).getBody().getSubject();
+
+        }catch (Exception e){
+            throw  new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Token invalido");
+        }
     }
 
 }
