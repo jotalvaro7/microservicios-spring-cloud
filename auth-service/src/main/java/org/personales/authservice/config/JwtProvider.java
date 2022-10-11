@@ -21,13 +21,9 @@ public class JwtProvider {
     public String createToken(UserEntity user){
         Map<String, Object>  claims = Jwts.claims().setSubject(user.getUsername());
         claims.put("id", user.getId());
-        //TODO remove hardcode
-        claims.put("twitter_account", "https://twitter.com/PersonalesOrg");
         Date now = new Date(); //fecha de expedicion del token
         Date exp = new Date(now.getTime() + 3600*1000); //fecha de expiracion del token
         return Jwts.builder()
-                //TODO remove hardcode
-                .setHeaderParam("company_name", "julio_compay")
                 .setClaims(claims)
                 .setIssuedAt(now)
                 .setExpiration(exp)
@@ -36,12 +32,11 @@ public class JwtProvider {
     }
 
     //Metodo para validar el token
-    public boolean validatetoken(String token){
+    public void validatetoken(String token){
         try {
             Jwts.parser().setSigningKey(secretkey).parseClaimsJws(token);
-            return true;
         }catch (Exception e){
-            return false;
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         }
     }
 
@@ -49,7 +44,6 @@ public class JwtProvider {
     public String getUsernameFromToken(String token){
         try{
             return Jwts.parser().setSigningKey(secretkey).parseClaimsJws(token).getBody().getSubject();
-
         }catch (Exception e){
             throw  new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Token invalido");
         }
