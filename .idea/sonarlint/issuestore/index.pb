@@ -9,8 +9,6 @@ E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
 I
 spring-gateway/Dockerfile,1\4\14af17576d829f116ecc0b9e6cd21b09ffcd5abc
-F
-spring-gateway/pom.xml,1\a\1ae8afa193c046bd1a78f539e3254a5533e53aff
 H
 eureka-server/Dockerfile,c\2\c23e45bb07363b2bfed88dc0975147c2a8cedd09
 H
@@ -37,8 +35,6 @@ fclient-standalone/src/main/java/org/personales/clientstandalone/clients/DragonB
 Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
 ‡
 Wspring-gateway/src/main/java/org/personales/springgateway/SpringGatewayApplication.java,7\a\7aaf3b2ac8ce3ebcc97622ffc4f7c55163c9b1e8
-ƒ
-Sspring-gateway/src/main/java/org/personales/springgateway/config/GatewayConfig.java,0\9\09a717ff96391cf66da20f28ce9cc591a3bbdfce
 €
 Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.java,8\6\868748a3e7576efffb08137446ef9971c2bad116
 †
