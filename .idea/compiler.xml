@@ -9,16 +9,21 @@
         <module name="config-server" />
         <module name="client-standalone" />
         <module name="simple-rest-example" />
+        <module name="consumer-simple-example" />
         <module name="spring-gateway" />
         <module name="dragon-ball" />
         <module name="game-of-thrones" />
+        <module name="cloudstream-example" />
         <module name="dragonball-failover" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client-standalone" target="11" />
+      <module name="cloudstream-example" target="11" />
+      <module name="cloudstream-rabbitmq" target="11" />
       <module name="config-server" target="11" />
+      <module name="consumer-simple-example" target="11" />
       <module name="dragon-ball" target="11" />
       <module name="dragonball-failover" target="11" />
       <module name="eureka-server" target="11" />
@@ -31,7 +36,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client-standalone" options="-parameters" />
+      <module name="cloudstream-example" options="-parameters" />
+      <module name="cloudstream-rabbitmq" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="consumer-simple-example" options="-parameters" />
       <module name="dragon-ball" options="-parameters" />
       <module name="dragonball-failover" options="-parameters" />
       <module name="eureka-server" options="-parameters" />

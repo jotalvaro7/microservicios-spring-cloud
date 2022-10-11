@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Microservicios con Spring cloud.iml" filepath="$PROJECT_DIR$/.idea/Microservicios con Spring cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-standalone/client-standalone.iml" filepath="$PROJECT_DIR$/client-standalone/client-standalone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudstream-example/cloudstream-example.iml" filepath="$PROJECT_DIR$/cloudstream-example/cloudstream-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-simple-example/consumer-simple-example.iml" filepath="$PROJECT_DIR$/consumer-simple-example/consumer-simple-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragon-ball/dragon-ball.iml" filepath="$PROJECT_DIR$/dragon-ball/dragon-ball.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragonball-failover/dragonball-failover.iml" filepath="$PROJECT_DIR$/dragonball-failover/dragonball-failover.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />

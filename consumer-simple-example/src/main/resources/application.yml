@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition:
+          processor
+      bindings:
+        processor-in-0:
+          destination:  squares
+        processor-out-0:
+          destination:  concat
