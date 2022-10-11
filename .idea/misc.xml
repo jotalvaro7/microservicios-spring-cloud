@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloudstream-example/pom.xml" />
         <option value="$PROJECT_DIR$/consumer-simple-example/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-service/pom.xml" />
       </list>
     </option>
   </component>

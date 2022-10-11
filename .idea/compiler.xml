@@ -10,6 +10,7 @@
         <module name="client-standalone" />
         <module name="simple-rest-example" />
         <module name="consumer-simple-example" />
+        <module name="auth-service" />
         <module name="spring-gateway" />
         <module name="dragon-ball" />
         <module name="game-of-thrones" />
@@ -19,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth-service" target="11" />
       <module name="client-standalone" target="11" />
       <module name="cloudstream-example" target="11" />
       <module name="cloudstream-rabbitmq" target="11" />
@@ -35,6 +37,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
       <module name="client-standalone" options="-parameters" />
       <module name="cloudstream-example" options="-parameters" />
       <module name="cloudstream-rabbitmq" options="-parameters" />

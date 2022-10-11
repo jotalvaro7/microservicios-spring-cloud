@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Microservicios con Spring cloud.iml" filepath="$PROJECT_DIR$/.idea/Microservicios con Spring cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-standalone/client-standalone.iml" filepath="$PROJECT_DIR$/client-standalone/client-standalone.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudstream-example/cloudstream-example.iml" filepath="$PROJECT_DIR$/cloudstream-example/cloudstream-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />

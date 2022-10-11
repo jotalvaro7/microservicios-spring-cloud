@@ -47,8 +47,6 @@ Vdragon-ball/src/main/java/org/personales/dragonball/config/DiscoveryConfigurati
 Sdragon-ball/src/main/java/org/personales/dragonball/config/RegistryMetricsName.java,f\a\fab8169c7cfd291eb0dc5b83c65daccc006c35bb
 ç
 ]dragon-ball/src/main/java/org/personales/dragonball/controller/ApplicationNameController.java,7\4\74fbfb990233f161ea7d024cc53a57ba5edaa32a
-B
-docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 à
 Xdragon-ball/src/main/java/org/personales/dragonball/controller/DragonBallController.java,b\5\b54f4d5821463b6cfefe4525f394cf8b747580e9
 {
@@ -77,3 +75,9 @@ Ygame-of-thrones/src/main/java/org/personales/gameofthrones/config/CacheConfigur
 kcloudstream-example/src/test/java/org/personales/cloudstreamexample/CloudstreamExampleApplicationTests.java,d\c\dc3cb1d20ac6284c8c0266b49c27698aff817469
 †
 pconsumer-simple-example/src/main/java/org/personales/consumersimpleexample/ConsumerSimpleExampleApplication.java,a\3\a33f06190b5879ed84b6028e7a54fe62174a7655
+K
+cloudstream-example/pom.xml,b\8\b8b30079bc788bb427dfd687fca7e6ad2a2d3327
+ï
+ecloudstream-example/src/main/java/org/personales/cloudstreamexample/controller/MessageController.java,0\0\0069ef4d5b47506064038167eabe66923c70ad86
+ñ
+fcloudstream-example/src/main/java/org/personales/cloudstreamexample/CloudstreamExampleApplication.java,c\0\c0c5d3d305cbd180100a55710b43443a6bcca79c
