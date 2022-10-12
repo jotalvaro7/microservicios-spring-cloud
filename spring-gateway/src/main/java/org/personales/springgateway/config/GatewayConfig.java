@@ -41,7 +41,7 @@ public class GatewayConfig {
     @Profile("localhost-eureka-circuitBreaker")
     public RouteLocator configLocalEurekaCircuitBreaker(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/api/v1/dragonball/*")
+                .route(r -> r.path("/api/v1/dragonball/**")
                             .filters(f -> {
                                 f.circuitBreaker(config -> config.setName("failoverCB")
                                         .setFallbackUri("forward:/api/v1/db-failover/dragonball/characters")
@@ -50,10 +50,10 @@ public class GatewayConfig {
                                 return f;
                             })
                             .uri("lb://msvc-dragon-ball"))
-                .route(r -> r.path("/api/v1/gameofthrones/*")
+                .route(r -> r.path("/api/v1/gameofthrones/**")
                         .filters(f -> f.filter(authFilter))
                         .uri("lb://msvc-game-of-thrones"))
-                .route(r -> r.path("/api/v1/db-failover/dragonball/*")
+                .route(r -> r.path("/api/v1/db-failover/dragonball/**")
                         .uri("lb://msvc-dragon-ball-failover"))
                 .route(r -> r.path("/auth/**")
                         .uri("lb://msvc-auth"))

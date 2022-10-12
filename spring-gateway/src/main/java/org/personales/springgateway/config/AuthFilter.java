@@ -43,7 +43,7 @@ public class AuthFilter implements GatewayFilter {
         String jwt = chunks[1];
         return webClient.build()
                 .post()
-                .uri("http://msvc-auth/validate?token=" + jwt)
+                .uri("http://msvc-auth/auth/validate?token="+jwt)
                 .retrieve()
                 .bodyToMono(TokenDto.class)
                 .map(tokenDto -> {
