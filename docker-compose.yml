@@ -2,6 +2,24 @@
 version: '3.9'
 services:
 
+  zipkin-container:
+    container_name: zipkin-container
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - spring
+    restart: always
+
+  redis:
+    container_name: redis-container
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+        - spring
+    restart: always
+
   service-registry:
     container_name: service-registry
     build:
@@ -15,26 +33,17 @@ services:
       - spring
     restart: always
 
-  zipkin-container:
-    container_name: zipkin-container
-    image: openzipkin/zipkin
-    ports:
-      - "9411:9411"
-    networks:
-      - spring
-    restart: always
-
-  api-gateway:
-    container_name: api-gateway
+  msvc-auth:
+    container_name: msvc-auth
     build:
-      context: ./spring-gateway
+      context: ./auth-service
       dockerfile: Dockerfile
     ports:
-      - "9095:9095"
+      - "8080:8080"
     environment:
-      PORT: 9095
-      EUREKA_CLIENT: service-registry:8761
-      ZIPKIN_CLIENT: zipkin-container:9411
+      PORT: 8080
+      PROFILE: pdn
+      ZIPKIN_HOST: zipkin-container
     networks:
       - spring
     depends_on:
@@ -64,6 +73,7 @@ services:
       - "8082:8082"
     environment:
       PORT: 8082
+      PROFILE: prod
       EUREKA_CLIENT: service-registry:8761
       ZIPKIN_CLIENT: zipkin-container:9411
       CONFIG_CLIENT: config-server:8888
@@ -72,6 +82,43 @@ services:
     depends_on:
       - service-registry
       - config-server
+      - zipkin-container
+    restart: always
+
+#  msvc-game-of-thrones:
+#    container_name: msvc-game-of-thrones
+#    build:
+#      context: ./game-of-thrones
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8083:8083"
+#    environment:
+#      PORT: 8083
+#      PROFILE: pdn
+#      EUREKA_CLIENT: service-registry:8761
+#    networks:
+#      - spring
+#    depends_on:
+#      - service-registry
+#      - redis-container
+#    restart: always
+
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: ./spring-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "9095:9095"
+    environment:
+      PORT: 9095
+      PROFILE: pdn
+      EUREKA_CLIENT: service-registry:8761
+      ZIPKIN_CLIENT: zipkin-container:9411
+    networks:
+      - spring
+    depends_on:
+      - service-registry
       - zipkin-container
     restart: always
 

@@ -1,0 +1,13 @@
+#Indicar donde se encuentra el servidor de zipkin
+spring:
+  zipkin:
+    base-url: http://${ZIPKIN_HOST:zipkin-container:9411}
+  sleuth:
+    async:
+      enabled: true
+
+#indicar donde se encuentra el servidor de eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_CLIENT:service-registry:8761}/eureka/
