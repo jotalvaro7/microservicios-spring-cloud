@@ -27,8 +27,6 @@ I
 fclient-standalone/src/main/java/org/personales/clientstandalone/clients/DragonBallCharacterClient.java,9\1\91a30e179c5ec0607dd337f8a22da807a756f6bf
 ~
 Ndragon-ball/src/main/java/org/personales/dragonball/DragonBallApplication.java,f\a\fae3b13d91f578ea512e7bcf97441bba1bba4138
-‡
-Wspring-gateway/src/main/java/org/personales/springgateway/SpringGatewayApplication.java,7\a\7aaf3b2ac8ce3ebcc97622ffc4f7c55163c9b1e8
 €
 Pdragon-ball/src/main/java/org/personales/dragonball/config/DragonBallConfig.java,8\6\868748a3e7576efffb08137446ef9971c2bad116
 †
@@ -61,8 +59,6 @@ Nauth-service/src/main/java/org/personales/authservice/config/MapperConfig.java
 Xdragon-ball/src/main/java/org/personales/dragonball/controller/DragonBallController.java,b\5\b54f4d5821463b6cfefe4525f394cf8b747580e9
 C
 dragon-ball/pom.xml,9\a\9a54338272d2d19096035a574f724372d1ce93c4
-€
-Pauth-service/src/main/java/org/personales/authservice/config/SecurityConfig.java,5\8\58d704f5bb4a769aa881b4e02593098986e07584
 }
 Mauth-service/src/main/java/org/personales/authservice/config/JwtProvider.java,6\e\6ec862bbb3de96d717d7273b38b76844754d4c52
 ~
@@ -73,10 +69,6 @@ D
 auth-service/pom.xml,7\f\7f617cadbbc161fc020296c3a971388d61795426
 F
 spring-gateway/pom.xml,1\a\1ae8afa193c046bd1a78f539e3254a5533e53aff
-…
-Uspring-gateway/src/main/java/org/personales/springgateway/config/WebClientConfig.java,a\d\adc3560914a0dffde402ba7c4619682f39eb1116
-Œ
-\game-of-thrones/src/main/java/org/personales/gameofthrones/controller/MessageController.java,e\3\e3211f57cc0a2c93168f0208962b8f476211e3b4
 ‹
 [game-of-thrones/src/main/java/org/personales/gameofthrones/services/TranslationService.java,1\a\1ac5e6a83ca9853cd42980cd90db69d2b188e083
 –
@@ -89,12 +81,8 @@ Lauth-service/src/main/java/org/personales/authservice/model/dto/UserDto.java,a
 Tauth-service/src/main/java/org/personales/authservice/model/entities/UserEntity.java,3\f\3f8071fec8673bbff45ef1c99e03df1448bd29a5
 }
 Mspring-gateway/src/main/java/org/personales/springgateway/model/TokenDto.java,4\0\40cd7108b5a8de0777055483b639d91064b3f204
-€
-Pspring-gateway/src/main/java/org/personales/springgateway/config/AuthFilter.java,1\e\1e8cda0b0dea892d90a7d0b0504ef9baefed27bf
 I
 spring-gateway/Dockerfile,1\4\14af17576d829f116ecc0b9e6cd21b09ffcd5abc
-’
-bgame-of-thrones/src/main/java/org/personales/gameofthrones/controller/GameOfThronesController.java,6\b\6baf49b723eace04b239eab882a935fcc5849893
 G
 game-of-thrones/pom.xml,3\c\3ceb16047cec6862eecce8dfad41b42e98660d58
 J
@@ -109,3 +97,15 @@ H
 config-server/Dockerfile,b\6\b61e3bf1cf202a99b9cf49c6d7e26c98df17134b
 G
 auth-service/Dockerfile,c\e\ce775544541e71ddf16cf772c1d790760dc1dfb3
+…
+Uspring-gateway/src/main/java/org/personales/springgateway/config/WebClientConfig.java,a\d\adc3560914a0dffde402ba7c4619682f39eb1116
+‡
+Wspring-gateway/src/main/java/org/personales/springgateway/SpringGatewayApplication.java,7\a\7aaf3b2ac8ce3ebcc97622ffc4f7c55163c9b1e8
+Œ
+\game-of-thrones/src/main/java/org/personales/gameofthrones/controller/MessageController.java,e\3\e3211f57cc0a2c93168f0208962b8f476211e3b4
+”
+dgame-of-thrones/src/main/java/org/personales/gameofthrones/controller2/GameOfThronesController2.java,3\3\331c3148ff8379fbeae45a8816311246e97929ed
+’
+bgame-of-thrones/src/main/java/org/personales/gameofthrones/controller/GameOfThronesController.java,6\b\6baf49b723eace04b239eab882a935fcc5849893
+‰
+Ygame-of-thrones/src/main/java/org/personales/gameofthrones/config/CacheConfiguration.java,2\b\2b4ce32ee30f365819d08f5a78a1462e2e13cb84
