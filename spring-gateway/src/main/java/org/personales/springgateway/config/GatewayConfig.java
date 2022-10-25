@@ -38,8 +38,8 @@ public class GatewayConfig {
     }
 
     @Bean
-    @Profile("pdn")
-    //@Profile("dev")
+    //@Profile("pdn")
+    @Profile("dev")
     public RouteLocator configLocalEurekaCircuitBreaker(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/api/v1/dragonball/**")

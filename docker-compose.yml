@@ -17,7 +17,7 @@ services:
     ports:
       - "6379:6379"
     networks:
-        - spring
+      - spring
     restart: always
 
   service-registry:
@@ -85,23 +85,23 @@ services:
       - zipkin-container
     restart: always
 
-#  msvc-game-of-thrones:
-#    container_name: msvc-game-of-thrones
-#    build:
-#      context: ./game-of-thrones
-#      dockerfile: Dockerfile
-#    ports:
-#      - "8083:8083"
-#    environment:
-#      PORT: 8083
-#      PROFILE: pdn
-#      EUREKA_CLIENT: service-registry:8761
-#    networks:
-#      - spring
-#    depends_on:
-#      - service-registry
-#      - redis-container
-#    restart: always
+  msvc-game-of-thrones:
+    container_name: msvc-game-of-thrones
+    build:
+      context: ./game-of-thrones
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    environment:
+      PORT: 8083
+      PROFILE: pdn
+      EUREKA_CLIENT: service-registry:8761
+    networks:
+      - spring
+    depends_on:
+      - service-registry
+      - redis-container
+    restart: always
 
   api-gateway:
     container_name: api-gateway
@@ -140,5 +140,5 @@ services:
 #    restart: always
 
 networks:
-    spring:
-        name: spring
+  spring:
+    name: spring
